@@ -26,6 +26,6 @@ model Book {
   title         String
   isFiction     Boolean
   datePublished DateTime
-  authorId      Int      @unique
+  authorId      Int
   author        Author   @relation(fields: [authorId], references: [id], onDelete: Cascade)
 }
